@@ -4,7 +4,7 @@ export class Footer extends Component {
     render() {
         return (
             <div>
-                <footer className="page-footer brown lighten-1">
+                <footer className="page-footer brown lighten-2">
                     <div className="container">
                         <div className="row">
                         <div className="col l6 s12">
@@ -23,6 +23,7 @@ export class Footer extends Component {
                     <div className="footer-copyright">
                         <div className="container">
                         © 2020 Simply GCSE
+                        <p className="grey-text text-lighten-4 right">You have spent 0 hours revising this Month!</p>
                         </div>
                     </div>
                 </footer>

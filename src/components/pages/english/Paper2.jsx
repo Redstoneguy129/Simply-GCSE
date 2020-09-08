@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export class English extends Component {
+export class Paper2 extends Component {
     render() {
         return (
             <div>
-                <h1>This is English!</h1>
+                <h1>Paper2</h1>
             </div>
         )
     }
 }
 
-export default English
+export default Paper2
