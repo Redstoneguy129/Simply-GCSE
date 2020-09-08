@@ -4,7 +4,7 @@ export class Dashboard extends Component {
     render() {
         return (
             <div>
-                <br/><br/><br/>
+                <br/>
                 <div className="row valign-wrapper">
                     <div className="col s6 offset-s3 valign">
                         <div className="card-panel brown lighten-2">
