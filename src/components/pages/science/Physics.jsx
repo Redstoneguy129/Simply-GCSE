@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../../style/science/physics.css'
 
 export class Physics extends Component {
     render() {

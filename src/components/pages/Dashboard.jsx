@@ -1,32 +1,31 @@
 import React, { Component } from 'react'
 
-export class Dashboard extends Component {
+import '../../style/dashboard.css'
+
+export default class Dashboard extends Component {
     render() {
         return (
             <div>
-                <br/>
-                <div className="row valign-wrapper">
-                    <div className="col s6 offset-s3 valign">
+                <br/><br/><br/>
+                <div className="row">
+                    <div className="col s12 l3">
+                        <iframe title="discord" src="https://discordapp.com/widget?id=752976992433078274&theme=dark" width="350" height="520" allowtransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    </div>
+                    <div className="col s12 l6">
                         <div className="card-panel brown lighten-2">
                             <span className="flow-text white-text">
-                                Hello fellow GCSE student! 
+                                Hello fellow GCSE students! 
                                 We hope you have been revising hard and are enjoying the revision site. 
                                 We suggest checking the footer for info and links!
                             </span>
                         </div>
                     </div>
-                </div>
-                <div className="row valign-wrapper">
-                    <div className="col s6 offset-s3 valign">
-                        <iframe src="https://discordapp.com/widget?id=752976992433078274&theme=dark" width="400" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-                    </div>
-                    <div className="col s12 valign">
-                        <iframe src="https://titanembeds.com/embed/752976992433078274?css=164&defaultchannel=752994839985127474" height="500" width="450" frameborder="0"></iframe>
+                    <div className="col s12 l3">
+                        <iframe src="https://titanembeds.com/embed/752976992433078274?css=164&defaultchannel=752994839985127474" height="520" width="350" frameBorder="0"></iframe>
                     </div>
                 </div>
+                <br/><br/><br/>
             </div>
         )
     }
 }
-
-export default Dashboard

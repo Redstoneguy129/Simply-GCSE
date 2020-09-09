@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../../style/science/biology.css'
 
 export class Biology extends Component {
     render() {

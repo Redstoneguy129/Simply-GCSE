@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../style/mathematics.css'
 
 export class Mathematics extends Component {
     render() {

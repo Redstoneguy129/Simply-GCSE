@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../../style/english/paper1.css'
 
 export class Paper1 extends Component {
     render() {
