@@ -17,10 +17,10 @@ export class Dashboard extends Component {
                     </div>
                 </div>
                 <div className="row valign-wrapper">
-                    <div className="col s6 offset-s3">
+                    <div className="col s6 offset-s3 valign">
                         <iframe src="https://discordapp.com/widget?id=752976992433078274&theme=dark" width="400" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                     </div>
-                    <div className="col s12">
+                    <div className="col s12 valign">
                         <iframe src="https://titanembeds.com/embed/752976992433078274?css=164&defaultchannel=752994839985127474" height="500" width="450" frameborder="0"></iframe>
                     </div>
                 </div>
