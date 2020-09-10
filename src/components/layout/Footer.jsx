@@ -8,9 +8,8 @@ export class Footer extends Component {
         super(props);
         this.state = {
             cookies: new Cookies(),
-            hours: 0
+            hours: parseInt(new Cookies().get('hours') || 0)
         };
-        this.setState({hours: parseInt(this.state.cookies.get('hours') || 0)});
     }
 
     updateHours() {
@@ -40,29 +39,40 @@ export class Footer extends Component {
         }, 1000);
     }
 
+    openDiscord() {
+        window.open('https://discord.gg/j7dbBFX', 'Simply GCSE', 'width=600,height=400');
+    }
+
+    Revised() {
+        if(this.state.hours !== 0) {
+            return "You have spent "+this.state.hours+" hours revising this Month!"
+        }
+        return "You should start revising!";
+    }
+
     render() {
         return (
             <div>
                 <footer className="page-footer brown lighten-2">
                     <div className="container">
                         <div className="row">
-                        <div className="col l6 s12">
-                            <h5 className="white-text">About</h5>
-                            <p className="grey-text text-lighten-4">Simply GCSE is a place GCSE students from around the UK can revise for their exams.
-                            we provide high quality revision practices and we are developed by GCSE students ourselves.</p>
-                        </div>
-                        <div className="col l4 offset-l2 s12">
-                            <h5 className="white-text">Join Us!</h5>
-                            <ul>
-                            <li><a className="grey-text text-lighten-3" href="#!">Discord</a></li>
-                            </ul>
-                        </div>
+                            <div className="col l6 s12">
+                                <h5 className="white-text">About</h5>
+                                <p className="grey-text text-lighten-4">Simply GCSE is a place GCSE students from around the UK can revise for their exams.
+                                we provide high quality revision practices and we are developed by GCSE students ourselves.</p>
+                            </div>
+                            <div className="col l4 offset-l2 s12">
+                                <h5 className="white-text">Join Us!</h5>
+                                <ul>
+                                <li><button className="grey-text text-lighten-3" target="popup" onClick={this.openDiscord}>Discord</button></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div className="footer-copyright">
                         <div className="container">
-                        © 2020 Simply GCSE
-                        <p className="grey-text text-lighten-4 right">You have spent {this.state.hours} hours revising this Month!</p>
+                            © 2020 Simply GCSE
+                            <p className="grey-text text-lighten-4 right">{this.Revised()}</p>
                         </div>
                     </div>
                 </footer>

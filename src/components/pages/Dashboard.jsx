@@ -19,9 +19,29 @@ export default class Dashboard extends Component {
                                 We suggest checking the footer for info and links!
                             </span>
                         </div>
+                        <div className="row">
+                            <div className="col s12 m4 l6">
+                                <amp-ad width="100vw" height="320"
+                                    type="adsense"
+                                    data-ad-client="ca-pub-3105462441245273"
+                                    data-ad-slot="3379808439"
+                                    data-auto-format="rspv"
+                                    data-full-width="">
+                                </amp-ad>
+                            </div>
+                            <div className="col s12 m4 l6">
+                                <amp-ad width="100vw" height="320"
+                                    type="adsense"
+                                    data-ad-client="ca-pub-3105462441245273"
+                                    data-ad-slot="5978051611"
+                                    data-auto-format="rspv"
+                                    data-full-width="">
+                                </amp-ad>
+                            </div>
+                        </div>
                     </div>
                     <div className="col s12 l3">
-                        <iframe src="https://titanembeds.com/embed/752976992433078274?css=164&defaultchannel=752994839985127474" height="520" width="350" frameBorder="0"></iframe>
+                        <iframe title="chat" src="https://titanembeds.com/embed/752976992433078274?css=164&defaultchannel=752994839985127474" height="520" width="350" frameBorder="0"></iframe>
                     </div>
                 </div>
                 <br/><br/><br/>
